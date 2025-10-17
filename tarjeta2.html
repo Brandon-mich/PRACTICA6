@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>Tarjeta de Presentación</title>
+    <style>
+        /* Fondo general */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #2f4f4f, #3a6351);
+            color: #e0f2e9;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            animation: fadeIn 2s ease-in;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Título principal */
+        h1 {
+            color: #a8ffbf;
+            text-shadow: 0 0 10px #7ef19c;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        /* Subtítulos */
+        h2 {
+            color: #d7fbe8;
+            margin: 10px 0;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        h2:hover {
+            transform: scale(1.1);
+            color: #a8ffbf;
+        }
+
+        /* Imagen con estilo */
+        img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 4px solid #7ef19c;
+            box-shadow: 0 0 20px #5be394;
+            margin-top: 20px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 40px #a8ffbf;
+        }
+
+        /* Efecto flotante en la imagen */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Botón de enlace */
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #5be394;
+            color: #1b1b1b;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 15px #5be394;
+        }
+
+        a:hover {
+            background-color: #7ef19c;
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px #a8ffbf;
+        }
+
+        /* Efecto de entrada de subtítulos */
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Tarjeta de presentación</h1>
+    <h2>Jose Julian Carmona Martinez</h2>
+    <h2>Programación</h2>
+    <img src="https://tr.rbxcdn.com/180DAY-beaec1dc0d14483e97f128ed71ef7447/768/432/Image/Webp/noFilter" alt="Foto de perfil">
+    <br>
+    <a href="practica6.html">Inicio</a>
+</body>
+</html>
